@@ -602,7 +602,7 @@ const App = () => {
       <Header style={{ position: 'sticky', top: 0, zIndex: 1, width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <Title level={3} style={{ color: 'white', margin: 0 }}>
-            QR Order
+            ForkFrenzy
           </Title>
         </div>
         {tableNumber && !orderPlaced && (
@@ -624,7 +624,7 @@ const App = () => {
       <Content style={{ padding: '24px', maxWidth: '1200px', margin: '0 auto' }}>
         {!tableNumber ? (
           <Card style={{ textAlign: 'center', maxWidth: '500px', margin: '0 auto', marginTop: '50px' }}>
-            <Title level={3}>Welcome to QR Order</Title>
+            <Title level={3}>Welcome to ForkFrenzy</Title>
             <Text style={{ display: 'block', marginBottom: '24px' }}>
               Scan the QR code on your table to start ordering
             </Text>
