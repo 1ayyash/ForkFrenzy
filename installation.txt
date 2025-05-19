@@ -1,0 +1,103 @@
+Panduan Pemasangan dan Deployment QR Order System
+==============================================
+
+Keperluan Sistem:
+----------------
+1. Node.js (versi 14.0.0 atau lebih tinggi)
+   - Muat turun dari: https://nodejs.org/
+   - Pilih versi LTS (Long Term Support)
+
+2. Git
+   - Muat turun dari: https://git-scm.com/downloads
+   - Pilih versi untuk Windows
+
+3. Akaun GitHub
+   - Daftar di: https://github.com/signup
+   - Jika sudah ada, log masuk di: https://github.com/login
+
+Langkah-langkah Pemasangan:
+-------------------------
+1. Pasang Node.js:
+   - Buka fail .msi yang dimuat turun
+   - Ikut langkah-langkah pemasangan
+   - Buka Command Prompt dan taip untuk mengesahkan:
+     ```
+     node --version
+     npm --version
+     ```
+
+2. Pasang Git:
+   - Buka fail .exe yang dimuat turun
+   - Ikut langkah-langkah pemasangan
+   - Buka Command Prompt dan taip untuk mengesahkan:
+     ```
+     git --version
+     ```
+
+3. Konfigurasi Git dengan GitHub:
+   - Buka Command Prompt
+   - Taip arahan berikut (ganti dengan maklumat anda):
+     ```
+     git config --global user.name "Nama GitHub Anda"
+     git config --global user.email "email.anda@example.com"
+     ```
+
+Langkah-langkah Deployment:
+-------------------------
+1. Buka Command Prompt di folder projek anda
+
+2. Mulakan Git dalam projek:
+   ```
+   git init
+   ```
+
+3. Buat repository baru di GitHub:
+   - Pergi ke https://github.com/new
+   - Isi nama repository: "qr-order-system"
+   - JANGAN tandakan "Initialize this repository with a README"
+   - Klik "Create repository"
+
+4. Sambungkan projek anda ke GitHub (ganti 'username-anda' dengan username GitHub anda):
+   ```
+   git remote add origin https://github.com/username-anda/qr-order-system.git
+   ```
+
+5. Buat commit pertama:
+   ```
+   git add .
+   git commit -m "Initial commit"
+   ```
+
+6. Hantar kod ke GitHub:
+   ```
+   git push -u origin main
+   ```
+
+7. Jika anda menggunakan 2FA (Two-Factor Authentication), buat Personal Access Token:
+   a. Pergi ke https://github.com/settings/tokens
+   b. Klik "Generate new token (classic)"
+   c. Beri nama (contoh: "GitHub Pages Deployment")
+   d. Pilih scope "repo"
+   e. Klik "Generate token"
+   f. Salin token yang dihasilkan (anda akan perlukan ini sebagai kata laluan)
+
+8. Deploy ke GitHub Pages:
+   ```
+   npm run deploy
+   ```
+
+9. Tunggu sehingga proses selesai. Laman web anda akan tersedia di:
+   https://username-anda.github.io/qr-order-system
+
+Nota Penting:
+------------
+- Ganti "username-anda" dengan username GitHub anda dalam semua arahan
+- Pastikan anda berada dalam folder projek yang betul sebelum menjalankan arahan
+- Jika ada ralat, pastikan semua keperluan sistem telah dipasang dengan betul
+- Jika diminta kata laluan, gunakan Personal Access Token (bukan kata laluan GitHub biasa)
+
+Bantuan Tambahan:
+---------------
+- Dokumentasi GitHub Pages: https://docs.github.com/en/pages
+- Dokumentasi gh-pages: https://github.com/tschaub/gh-pages
+- Bantuan Git: https://git-scm.com/doc
