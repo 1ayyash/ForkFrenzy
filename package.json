@@ -1,8 +1,8 @@
 {
-  "name": "ForkFrenzyy",
+  "name": "ForkFrenzy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://1ayyash.github.io/ForkFrenzyy",
+  "homepage": "https://1ayyash.github.io/ForkFrenzy",
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@reduxjs/toolkit": "^2.0.1",
