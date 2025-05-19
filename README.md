@@ -51,7 +51,7 @@ npm start
 
 This is a dummy implementation. In a real-world scenario, you would connect to an actual backend system.
 
-[https://1ayyash.github.io/ForkFrenzy](ForkFrenzy)
+[ForkFrenzy](https://1ayyash.github.io/ForkFrenzy)
 
 ## License
 
