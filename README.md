@@ -47,20 +47,6 @@ npm start
 - HTML5-QRCode for QR scanning
 - Axios for API requests (simulated in this demo)
 
-## Deployment
-
-This project is configured for deployment to GitHub Pages. To deploy:
-
-1. Make sure you have Git configured with your GitHub credentials
-2. Run the deployment command:
-```bash
-npm run deploy
-```
-
-The site will be available at: `https://your-username.github.io/qr-order-system`
-
-For detailed deployment instructions, see [installation.txt](installation.txt)
-
 ## Demo
 
 This is a dummy implementation. In a real-world scenario, you would connect to an actual backend system.
